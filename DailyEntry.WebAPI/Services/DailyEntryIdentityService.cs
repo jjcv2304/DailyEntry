@@ -8,7 +8,12 @@ namespace DailyEntry.WebAPI.Services
         {
             get
             {
-                return Thread.CurrentPrincipal.Identity.Name;
+#if DEBUG
+                return "jcarmona";
+#else
+                   return Thread.CurrentPrincipal.Identity.Name;
+#endif
+
             }
         }
     }

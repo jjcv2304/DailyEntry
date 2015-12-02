@@ -28,11 +28,12 @@ namespace DailyEntry.WebAPI
                 defaults: new { controller = "workout", id = RouteParameter.Optional }
             );
 
-            config.Routes.MapHttpRoute(
-                name: "Token",
-                routeTemplate: "api/token",
-                defaults: new { controller = "token" }
-            );
+            //just for token implementation
+            //config.Routes.MapHttpRoute(
+            //    name: "Token",
+            //    routeTemplate: "api/token",
+            //    defaults: new { controller = "token" }
+            //);
 
             // Uncomment the following line of code to enable query support for actions with an IQueryable or IQueryable<T> return type.
             // To avoid processing unexpected or malicious queries, use the validation settings on QueryableAttribute to validate incoming queries.
