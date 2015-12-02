@@ -1,0 +1,24 @@
+c:\users\juanjosé\documents\visual studio 2010\Projects\DiaryTracker2010\DiaryTracker2010.Infrastructure\bin\Debug\DiaryTracker2010.Infrastructure.dll.config
+c:\users\juanjosé\documents\visual studio 2010\Projects\DiaryTracker2010\DiaryTracker2010.Infrastructure\bin\Debug\DiaryTracker2010.Infrastructure.dll
+c:\users\juanjosé\documents\visual studio 2010\Projects\DiaryTracker2010\DiaryTracker2010.Infrastructure\bin\Debug\DiaryTracker2010.Infrastructure.pdb
+c:\users\juanjosé\documents\visual studio 2010\Projects\DiaryTracker2010\DiaryTracker2010.Infrastructure\bin\Debug\DiaryTracker2010.Core.dll
+c:\users\juanjosé\documents\visual studio 2010\Projects\DiaryTracker2010\DiaryTracker2010.Infrastructure\bin\Debug\EntityFramework.dll
+c:\users\juanjosé\documents\visual studio 2010\Projects\DiaryTracker2010\DiaryTracker2010.Infrastructure\bin\Debug\EntityFramework.SqlServer.dll
+c:\users\juanjosé\documents\visual studio 2010\Projects\DiaryTracker2010\DiaryTracker2010.Infrastructure\bin\Debug\DiaryTracker2010.Core.pdb
+c:\users\juanjosé\documents\visual studio 2010\Projects\DiaryTracker2010\DiaryTracker2010.Infrastructure\bin\Debug\EntityFramework.xml
+c:\users\juanjosé\documents\visual studio 2010\Projects\DiaryTracker2010\DiaryTracker2010.Infrastructure\bin\Debug\EntityFramework.SqlServer.xml
+c:\users\juanjosé\documents\visual studio 2010\Projects\DiaryTracker2010\DiaryTracker2010.Infrastructure\obj\Debug\DiaryTracker2010.Infrastructure.csprojResolveAssemblyReference.cache
+c:\users\juanjosé\documents\visual studio 2010\Projects\DiaryTracker2010\DiaryTracker2010.Infrastructure\obj\Debug\DiaryTracker2010.Infrastructure.dll
+c:\users\juanjosé\documents\visual studio 2010\Projects\DiaryTracker2010\DiaryTracker2010.Infrastructure\obj\Debug\DiaryTracker2010.Infrastructure.pdb
+E:\PROGRAMS\DiaryTracker2010\DiaryTracker2010.Infrastructure\bin\Debug\DiaryTracker2010.Infrastructure.dll.config
+E:\PROGRAMS\DiaryTracker2010\DiaryTracker2010.Infrastructure\bin\Debug\DiaryTracker2010.Infrastructure.dll
+E:\PROGRAMS\DiaryTracker2010\DiaryTracker2010.Infrastructure\bin\Debug\DiaryTracker2010.Infrastructure.pdb
+E:\PROGRAMS\DiaryTracker2010\DiaryTracker2010.Infrastructure\bin\Debug\DiaryTracker2010.Core.dll
+E:\PROGRAMS\DiaryTracker2010\DiaryTracker2010.Infrastructure\bin\Debug\EntityFramework.dll
+E:\PROGRAMS\DiaryTracker2010\DiaryTracker2010.Infrastructure\bin\Debug\EntityFramework.SqlServer.dll
+E:\PROGRAMS\DiaryTracker2010\DiaryTracker2010.Infrastructure\bin\Debug\DiaryTracker2010.Core.pdb
+E:\PROGRAMS\DiaryTracker2010\DiaryTracker2010.Infrastructure\bin\Debug\EntityFramework.xml
+E:\PROGRAMS\DiaryTracker2010\DiaryTracker2010.Infrastructure\bin\Debug\EntityFramework.SqlServer.xml
+E:\PROGRAMS\DiaryTracker2010\DiaryTracker2010.Infrastructure\obj\Debug\DiaryTracker2010.Infrastructure.csprojResolveAssemblyReference.cache
+E:\PROGRAMS\DiaryTracker2010\DiaryTracker2010.Infrastructure\obj\Debug\DiaryTracker2010.Infrastructure.dll
+E:\PROGRAMS\DiaryTracker2010\DiaryTracker2010.Infrastructure\obj\Debug\DiaryTracker2010.Infrastructure.pdb
