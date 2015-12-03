@@ -22,9 +22,6 @@ namespace DailyEntry.Core.Services
         void EditWorkout(WorkoutVM workoutVM);
         void DeleteWorkout(int workoutId);
         
-        //Route
-        List<RouteVM> GetRoutes();
-
         //WorkoutType
         List<WorkoutTypeVM> GetWorkoutTypes();
 

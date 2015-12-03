@@ -61,9 +61,6 @@ namespace DailyEntry.Infrastructure.Repositories
             return _context.WorkoutTypes.ToList();
         }
 
-        public List<Route> GetRoutes()
-        {
-            return _context.Routes.ToList();
-        }
+    
     }
 }

@@ -13,6 +13,7 @@ namespace DailyEntry.Core.Model
         public System.DateTime Date { get; set; }
         public int? RestingHeartRate { get; set; }
         public decimal? Weight { get; set; }
+        public int DiaryuserId { get; set; }
 
         public virtual ICollection<Workout> Workouts { get; set; }
     }

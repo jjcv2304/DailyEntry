@@ -10,7 +10,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>DailyEntry.Core</RootNamespace>
     <AssemblyName>DailyEntry.Core</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
   </PropertyGroup>
@@ -60,9 +60,7 @@
     <Compile Include="Model\DailyFeeling.cs" />
     <Compile Include="Model\DailyFeelingPageVM.cs" />
     <Compile Include="Interfaces\ISecurityRepository.cs" />
-    <Compile Include="Model\Route.cs" />
     <Compile Include="Model\TokenRequestModel.cs" />
-    <Compile Include="Model\Weather.cs" />
     <Compile Include="Model\Workout.cs" />
     <Compile Include="Model\WorkoutType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -71,8 +69,6 @@
     <Compile Include="Services\ServiceDailyTracker.cs" />
     <Compile Include="ViewModel\AuthTokenVM.cs" />
     <Compile Include="ViewModel\DailyFeelingVM.cs" />
-    <Compile Include="ViewModel\RouteVM.cs" />
-    <Compile Include="ViewModel\WeatherVM.cs" />
     <Compile Include="ViewModel\WorkoutVM.cs" />
     <Compile Include="ViewModel\WorkoutTypeVM.cs" />
   </ItemGroup>

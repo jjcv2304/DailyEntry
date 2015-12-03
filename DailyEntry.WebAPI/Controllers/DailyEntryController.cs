@@ -7,10 +7,12 @@ using DailyEntry.Core.Services;
 using DailyEntry.Core.ViewModel;
 using DailyEntry.WebAPI.Filters;
 using DailyEntry.WebAPI.Services;
+using System.Web.Http.Cors;
 
 namespace DailyEntry.WebAPI.Controllers
 {
     [DailyEntryAuthorize]
+   // [EnableCors("*","*","*")]
     public class DailyEntryController : ApiController
     {
         private readonly IServiceDailyTracker _service;
@@ -25,12 +27,11 @@ namespace DailyEntry.WebAPI.Controllers
             _identityService = identityService;
         }
 
-        public HttpResponseMessage Get(int pageSize, int page)
+        public IHttpActionResult Get(int pageSize, int page)
         {
             if (pageSize > MAX_PAGE_SIZE)
             {
-                return Request.CreateResponse(HttpStatusCode.BadRequest,
-                    string.Format("Maximum items per page allowed is: {0}", MAX_PAGE_SIZE));
+                return BadRequest(string.Format("Maximum items per page allowed is: {0}", MAX_PAGE_SIZE));
             }
             if (page < 0) page = 0;
 
@@ -40,13 +41,13 @@ namespace DailyEntry.WebAPI.Controllers
             dailyFeelingPage.PrevUrl = page > 0 ? helper.Link("DailyEntry", new { page = page - 1 }) : "";
             dailyFeelingPage.NextUrl = page < dailyFeelingPage.TotalPages - 1 ? helper.Link("DailyEntry", new {pageSize = pageSize ,page = page + 1 }) : "";
 
-            return Request.CreateResponse(HttpStatusCode.OK, dailyFeelingPage);
+            return Ok(dailyFeelingPage);
         }
 
-        public HttpResponseMessage Get(int dailyFeelingId)
+        public IHttpActionResult Get(int dailyFeelingId)
         {
             var dailyEntries = _service.GetDailyFeeling(dailyFeelingId);
-            return Request.CreateResponse(HttpStatusCode.OK, dailyEntries);
+            return Ok(dailyEntries);
         }
 
         public HttpResponseMessage Post(DailyFeelingVM dailyFeelingVM)

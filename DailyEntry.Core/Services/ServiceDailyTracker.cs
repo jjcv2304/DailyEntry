@@ -115,13 +115,6 @@ namespace DailyEntry.Core.Services
             _uow.Save();
         }
 
-        //Route
-        public List<RouteVM> GetRoutes()
-        {
-            var routes = _uow.WorkoutRepository.GetRoutes();
-            return MapMVM.RouteToRouteVM(routes);
-        }
-
         //Security
         public ApiUser GetApiUser(string apiKey)
         {

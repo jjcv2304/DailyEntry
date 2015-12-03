@@ -3,6 +3,7 @@ using System.Net.Http.Formatting;
 using System.Web.Http;
 using Newtonsoft.Json.Serialization;
 using WebApiContrib.Formatting.Jsonp;
+using System.Web.Http.Cors;
 
 namespace DailyEntry.WebAPI
 {
@@ -10,11 +11,7 @@ namespace DailyEntry.WebAPI
     {
         public static void Register(HttpConfiguration config)
         {
-            //config.Routes.MapHttpRoute(
-            //    name: "DailyEntry",
-            //    routeTemplate: "api/{controller}/{id}",
-            //    defaults: new { id = RouteParameter.Optional }
-            //);
+            config.MapHttpAttributeRoutes();
 
             config.Routes.MapHttpRoute(
                 name: "DailyEntry",
@@ -46,6 +43,12 @@ namespace DailyEntry.WebAPI
             // Add support JSONP
             var formatter = new JsonpMediaTypeFormatter(jsonFormatter, "cb");
             config.Formatters.Insert(0, formatter);
+
+            //todo add cache
+
+            //Enable disable Cors
+            //var atr = new EnableCorsAttribute("*", "*", "*"); ;
+            //config.EnableCors(atr);
 
 #if !DEBUG
       // Force HTTPS on entire API

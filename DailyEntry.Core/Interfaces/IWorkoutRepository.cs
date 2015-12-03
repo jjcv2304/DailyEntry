@@ -14,6 +14,5 @@ namespace DailyEntry.Core.Interfaces
 
         //todo create new repositories
         List<WorkoutType> GetWorkoutTypes();
-        List<Route> GetRoutes();
     }
 }

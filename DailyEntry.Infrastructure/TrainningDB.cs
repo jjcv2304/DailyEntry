@@ -18,11 +18,7 @@ namespace DailyEntry.Infrastructure
           //  base.OnModelCreating(modelBuilder);
         }
 
- 
-
         public DbSet<DailyFeeling> DailyFeelings { get; set; }
-        public DbSet<Route> Routes { get; set; }
-        public DbSet<Weather> Weathers { get; set; }
         public DbSet<Workout> Workouts { get; set; }
         public DbSet<WorkoutType> WorkoutTypes { get; set; }
         public DbSet<ApiUser> ApiUsers { get; set; }
@@ -31,8 +27,6 @@ namespace DailyEntry.Infrastructure
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Configurations.Add(new DailyFeelingMap());
-            modelBuilder.Configurations.Add(new RouteMap());
-            modelBuilder.Configurations.Add(new WeatherMap());
             modelBuilder.Configurations.Add(new WorkoutMap());
             modelBuilder.Configurations.Add(new WorkoutTypeMap());
             modelBuilder.Configurations.Add(new ApiUserMap());

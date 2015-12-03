@@ -39,12 +39,8 @@ namespace DailyEntry.Core.Services
                                                        select new WorkoutVM()
                                                            {
                                                                WorkoutId = w.WorkoutId,                                                               
-                                                               Date = w.Date,
                                                                Distance = w.Distance,
                                                                Notes = w.Notes,
-                                                               RouteId = w.RouteId,
-                                                               RouteName = w.Route.Name,
-                                                               Time = w.Time,
                                                                TotalTime = w.TotalTime,
                                                                WorkoutTypeId = w.WorkoutTypeId,
                                                                WorkoutTypeName = w.WorkoutType.Name,
@@ -105,31 +101,14 @@ namespace DailyEntry.Core.Services
             var workout = new Workout()
             {
                 WorkoutId = workoutVM.WorkoutId,
-                Date = workoutVM.Date,
-                Time = workoutVM.Time,
                 Distance = workoutVM.Distance,
                 TotalTime = workoutVM.TotalTime,
                 Notes = workoutVM.Notes,
                 DiaryFeelingId = workoutVM.DiaryFeelingId,
-                RouteId = workoutVM.RouteId,
                 WorkoutTypeId = workoutVM.WorkoutTypeId
             };
             return workout;
         }
-
-        //Route
-        public static List<RouteVM> RouteToRouteVM(List<Route> routes)
-        {
-            var routesvm = from r in routes
-                           select new RouteVM()
-                               {
-                                   RouteId = r.RouteId,
-                                   Name = r.Name,
-                                   Description = r.Description
-                               };
-            return routesvm.ToList();
-        }
-
 
         public static AuthToken AuthTokenVMToAuthToken(AuthTokenVM authTokenVM)
         {

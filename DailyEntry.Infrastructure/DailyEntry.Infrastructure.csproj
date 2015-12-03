@@ -10,7 +10,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>DailyEntry.Infrastructure</RootNamespace>
     <AssemblyName>DailyEntry.Infrastructure</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
   </PropertyGroup>
@@ -51,10 +51,7 @@
   <ItemGroup>
     <Compile Include="Mapping\AuthTokenMap.cs" />
     <Compile Include="Mapping\ApiUserMap.cs" />
-    <Compile Include="Class1.cs" />
     <Compile Include="Mapping\DailyFeelingMap.cs" />
-    <Compile Include="Mapping\RouteMap.cs" />
-    <Compile Include="Mapping\WeatherMap.cs" />
     <Compile Include="Mapping\WorkoutMap.cs" />
     <Compile Include="Mapping\WorkoutTypeMap.cs" />
     <Compile Include="Repositories\DailyFeelingRepository.cs" />
