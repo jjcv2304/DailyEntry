@@ -1,7 +1,7 @@
 using System.Data.Entity.ModelConfiguration;
 using DailyEntry.Core.Model;
 
-namespace powertools.Models.Mapping
+namespace DailyEntry.Infrastructure.Mapping
 {
     public class DailyFeelingMap : EntityTypeConfiguration<DailyFeeling>
     {
@@ -22,7 +22,12 @@ namespace powertools.Models.Mapping
             this.Property(t => t.Date).HasColumnName("Date");
             this.Property(t => t.RestingHeartRate).HasColumnName("RestingHeartRate");
             this.Property(t => t.Weight).HasColumnName("Weight");
+            this.Property(t => t.DiaryuserId).HasColumnName("DiaryuserId");
 
+            // Relationships
+            this.HasOptional(t => t.DiaryUser)
+                .WithMany(t => t.DailyFeelings)
+                .HasForeignKey(d => d.DiaryuserId);
 
         }
     }

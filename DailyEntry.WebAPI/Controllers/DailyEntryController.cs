@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
@@ -27,11 +28,14 @@ namespace DailyEntry.WebAPI.Controllers
             _identityService = identityService;
         }
 
-        public IHttpActionResult Get(int pageSize, int page)
+        //public IHttpActionResult Get(int pageSize, int page)
+        public IHttpActionResult Get()
         {
+            int pageSize = 10;
+            int page= 1;
             if (pageSize > MAX_PAGE_SIZE)
             {
-                return BadRequest(string.Format("Maximum items per page allowed is: {0}", MAX_PAGE_SIZE));
+               return BadRequest(string.Format("Maximum items per page allowed is: {0}", MAX_PAGE_SIZE));
             }
             if (page < 0) page = 0;
 
@@ -41,7 +45,8 @@ namespace DailyEntry.WebAPI.Controllers
             dailyFeelingPage.PrevUrl = page > 0 ? helper.Link("DailyEntry", new { page = page - 1 }) : "";
             dailyFeelingPage.NextUrl = page < dailyFeelingPage.TotalPages - 1 ? helper.Link("DailyEntry", new {pageSize = pageSize ,page = page + 1 }) : "";
 
-            return Ok(dailyFeelingPage);
+             return Ok(dailyFeelingPage);
+           // return dailyFeelingPage.DailyFeelingsVM;
         }
 
         public IHttpActionResult Get(int dailyFeelingId)

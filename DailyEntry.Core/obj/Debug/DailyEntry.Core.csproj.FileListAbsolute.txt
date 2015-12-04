@@ -15,6 +15,6 @@ E:\WORK\VS_DailyEntries\DailyEntry\DailyEntry.Core\bin\Debug\EntityFramework.dll
 E:\WORK\VS_DailyEntries\DailyEntry\DailyEntry.Core\bin\Debug\EntityFramework.SqlServer.dll
 E:\WORK\VS_DailyEntries\DailyEntry\DailyEntry.Core\bin\Debug\EntityFramework.xml
 E:\WORK\VS_DailyEntries\DailyEntry\DailyEntry.Core\bin\Debug\EntityFramework.SqlServer.xml
+E:\WORK\VS_DailyEntries\DailyEntry\DailyEntry.Core\obj\Debug\DailyEntry.Core.csprojResolveAssemblyReference.cache
 E:\WORK\VS_DailyEntries\DailyEntry\DailyEntry.Core\obj\Debug\DailyEntry.Core.dll
 E:\WORK\VS_DailyEntries\DailyEntry\DailyEntry.Core\obj\Debug\DailyEntry.Core.pdb
-E:\WORK\VS_DailyEntries\DailyEntry\DailyEntry.Core\obj\Debug\DailyEntry.Core.csprojResolveAssemblyReference.cache

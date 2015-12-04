@@ -1,7 +1,7 @@
 using System.Data.Entity.ModelConfiguration;
 using DailyEntry.Core.Model;
 
-namespace powertools.Models.Mapping
+namespace DailyEntry.Infrastructure.Mapping
 {
     public class WorkoutTypeMap : EntityTypeConfiguration<WorkoutType>
     {

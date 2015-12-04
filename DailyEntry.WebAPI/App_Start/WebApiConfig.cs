@@ -15,8 +15,8 @@ namespace DailyEntry.WebAPI
 
             config.Routes.MapHttpRoute(
                 name: "DailyEntry",
-                routeTemplate: "api/dailyEntry/{dailyEntryId}",
-                defaults: new { controller = "dailyEntry", dailyEntryId = RouteParameter.Optional }
+                routeTemplate: "api/dailyEntry/{dailyFeelingId}",
+                defaults: new { controller = "dailyEntry", dailyFeelingId = RouteParameter.Optional }
             );
 
             config.Routes.MapHttpRoute(
@@ -41,14 +41,14 @@ namespace DailyEntry.WebAPI
             jsonFormatter.SerializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver();
 
             // Add support JSONP
-            var formatter = new JsonpMediaTypeFormatter(jsonFormatter, "cb");
-            config.Formatters.Insert(0, formatter);
+            //var formatter = new JsonpMediaTypeFormatter(jsonFormatter, "cb");
+            //config.Formatters.Insert(0, formatter);
 
             //todo add cache
 
             //Enable disable Cors
-            //var atr = new EnableCorsAttribute("*", "*", "*"); ;
-            //config.EnableCors(atr);
+            var atr = new EnableCorsAttribute("*", "*", "*"); ;
+            config.EnableCors(atr);
 
 #if !DEBUG
       // Force HTTPS on entire API

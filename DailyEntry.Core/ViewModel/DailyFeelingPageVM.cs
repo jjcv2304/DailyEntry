@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
-using DailyEntry.Core.ViewModel;
 
-namespace DailyEntry.Core.Model
+namespace DailyEntry.Core.ViewModel
 {
     public class DailyFeelingPageVM
     {

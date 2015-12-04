@@ -52,6 +52,7 @@
     <Compile Include="Mapping\AuthTokenMap.cs" />
     <Compile Include="Mapping\ApiUserMap.cs" />
     <Compile Include="Mapping\DailyFeelingMap.cs" />
+    <Compile Include="Mapping\DiaryUserMap.cs" />
     <Compile Include="Mapping\WorkoutMap.cs" />
     <Compile Include="Mapping\WorkoutTypeMap.cs" />
     <Compile Include="Repositories\DailyFeelingRepository.cs" />

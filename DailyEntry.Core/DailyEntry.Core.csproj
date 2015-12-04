@@ -58,8 +58,9 @@
     <Compile Include="Model\ApiUser.cs" />
     <Compile Include="Model\AuthToken.cs" />
     <Compile Include="Model\DailyFeeling.cs" />
-    <Compile Include="Model\DailyFeelingPageVM.cs" />
+    <Compile Include="ViewModel\DailyFeelingPageVM.cs" />
     <Compile Include="Interfaces\ISecurityRepository.cs" />
+    <Compile Include="Model\DiaryUser.cs" />
     <Compile Include="Model\TokenRequestModel.cs" />
     <Compile Include="Model\Workout.cs" />
     <Compile Include="Model\WorkoutType.cs" />

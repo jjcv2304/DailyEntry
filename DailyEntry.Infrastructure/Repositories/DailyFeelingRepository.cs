@@ -50,7 +50,6 @@ namespace DailyEntry.Infrastructure.Repositories
         {
             return _context.DailyFeelings
                 .Include("Workouts")
-                .Include("Workouts.Route")
                 .Include("Workouts.WorkoutType")
                 .OrderByDescending(d => d.Date)
                 .Skip(pageSize * page)
@@ -62,7 +61,6 @@ namespace DailyEntry.Infrastructure.Repositories
         {
             return _context.DailyFeelings
                 .Include("Workouts")
-                .Include("Workouts.Route")
                 .Include("Workouts.WorkoutType")
                 .FirstOrDefault(d => d.DailyFeelingId == dailyFeelingId);
         }

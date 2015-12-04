@@ -1,0 +1,7 @@
+﻿vs2010:
+-mvp
+
+vs2012
+-pluralsightbook
+-pluralsightwinformdemo
+-activitiesagenda

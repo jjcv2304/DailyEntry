@@ -1,7 +1,6 @@
 using System.Data.Entity;
 using DailyEntry.Core.Model;
 using DailyEntry.Infrastructure.Mapping;
-using powertools.Models.Mapping;
 
 namespace DailyEntry.Infrastructure
 {

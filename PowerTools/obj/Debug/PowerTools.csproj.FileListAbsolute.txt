@@ -1,0 +1,19 @@
+c:\users\juanjosé\documents\visual studio 2010\Projects\DiaryTracker2010\PowerTools\bin\Debug\PowerTools.dll.config
+c:\users\juanjosé\documents\visual studio 2010\Projects\DiaryTracker2010\PowerTools\bin\Debug\PowerTools.dll
+c:\users\juanjosé\documents\visual studio 2010\Projects\DiaryTracker2010\PowerTools\bin\Debug\PowerTools.pdb
+c:\users\juanjosé\documents\visual studio 2010\Projects\DiaryTracker2010\PowerTools\bin\Debug\EntityFramework.dll
+c:\users\juanjosé\documents\visual studio 2010\Projects\DiaryTracker2010\PowerTools\bin\Debug\EntityFramework.SqlServer.dll
+c:\users\juanjosé\documents\visual studio 2010\Projects\DiaryTracker2010\PowerTools\bin\Debug\EntityFramework.xml
+c:\users\juanjosé\documents\visual studio 2010\Projects\DiaryTracker2010\PowerTools\bin\Debug\EntityFramework.SqlServer.xml
+c:\users\juanjosé\documents\visual studio 2010\Projects\DiaryTracker2010\PowerTools\obj\Debug\PowerTools.dll
+c:\users\juanjosé\documents\visual studio 2010\Projects\DiaryTracker2010\PowerTools\obj\Debug\PowerTools.pdb
+E:\WORK\VS_DailyEntries\DailyEntry\PowerTools\bin\Debug\PowerTools.dll.config
+E:\WORK\VS_DailyEntries\DailyEntry\PowerTools\bin\Debug\PowerTools.dll
+E:\WORK\VS_DailyEntries\DailyEntry\PowerTools\bin\Debug\PowerTools.pdb
+E:\WORK\VS_DailyEntries\DailyEntry\PowerTools\bin\Debug\EntityFramework.dll
+E:\WORK\VS_DailyEntries\DailyEntry\PowerTools\bin\Debug\EntityFramework.SqlServer.dll
+E:\WORK\VS_DailyEntries\DailyEntry\PowerTools\bin\Debug\EntityFramework.xml
+E:\WORK\VS_DailyEntries\DailyEntry\PowerTools\bin\Debug\EntityFramework.SqlServer.xml
+E:\WORK\VS_DailyEntries\DailyEntry\PowerTools\obj\Debug\PowerTools.csprojResolveAssemblyReference.cache
+E:\WORK\VS_DailyEntries\DailyEntry\PowerTools\obj\Debug\PowerTools.dll
+E:\WORK\VS_DailyEntries\DailyEntry\PowerTools\obj\Debug\PowerTools.pdb
