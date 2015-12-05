@@ -37,26 +37,31 @@ namespace DailyEntry.Core.Services
             var diaryEntry = MapMVM.DiaryFeelingVMToDiaryFeeling(diaryFeelingVM);
             _uow.DiaryFeelingRepository.CreateDailyFeeling(diaryEntry);
             _uow.Save();
-        }
-        public void EditDiaryFeeling(DailyFeelingVM diaryFeelingVM)
-        {
-            var diaryEntry = MapMVM.DiaryFeelingVMToDiaryFeeling(diaryFeelingVM);
-            _uow.DiaryFeelingRepository.UpdateDailyFeeling(diaryEntry);
-            _uow.Save();
-        }
+        }        
 
         //DailyFeelings Graph
-        public void AddDailyFeelingAndWorkout(DailyFeelingVM dailyFeelingVM)
+        public void AddDailyFeelingAndWorkouts(DailyFeelingVM dailyFeelingVM)
         {
-            var diaryEntry = MapMVM.DiaryFeelingVMToDiaryFeeling(dailyFeelingVM);
-            _uow.DiaryFeelingRepository.CreateDailyFeeling(diaryEntry);
-
-            if (dailyFeelingVM.WorkoutsVM != null && dailyFeelingVM.WorkoutsVM.Count > 0)
+            var dailyFeeling = MapMVM.DiaryFeelingVMToDiaryFeeling(dailyFeelingVM);
+            _uow.DiaryFeelingRepository.CreateDailyFeeling(dailyFeeling);
+            AddEditWorkouts(dailyFeeling);
+            _uow.Save();
+            dailyFeelingVM = MapMVM.DiaryFeelingToDiaryFeelingVM(dailyFeeling);
+        }      
+        public void EditDiaryFeelingAndWorkouts(DailyFeelingVM dailyFeelingVM)
+        {
+            var dailyFeeling = MapMVM.DiaryFeelingVMToDiaryFeeling(dailyFeelingVM);
+            _uow.DiaryFeelingRepository.UpdateDailyFeeling(dailyFeeling);
+            AddEditWorkouts(dailyFeeling);
+            _uow.Save();
+        }
+        private void AddEditWorkouts(DailyFeeling dailyFeeling)
+        {
+            if (dailyFeeling.Workouts != null && dailyFeeling.Workouts.Count > 0)
             {
-                foreach (var workoutVM in dailyFeelingVM.WorkoutsVM)
+                foreach (var workout in dailyFeeling.Workouts)
                 {
-                    workoutVM.DiaryFeelingId = diaryEntry.DailyFeelingId;
-                    var workout = MapMVM.WorkoutToWorkoutVM(workoutVM);
+                    workout.DiaryFeelingId = dailyFeeling.DailyFeelingId;
                     if (workout.WorkoutId == 0)
                     {
                         _uow.WorkoutRepository.CreateWorkout(workout);
@@ -67,8 +72,6 @@ namespace DailyEntry.Core.Services
                     }
                 }
             }
-
-            _uow.Save();
         }
         public void DeleteDailyFeelingAndWorkout(int dailyFeelingId)
         {

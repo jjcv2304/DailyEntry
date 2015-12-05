@@ -52,7 +52,7 @@ namespace DailyEntry.Infrastructure.Repositories
                 .Include("Workouts")
                 .Include("Workouts.WorkoutType")
                 .OrderByDescending(d => d.Date)
-                .Skip(pageSize * page)
+                .Skip(pageSize * (page-1))
                 .Take(pageSize)
                 .ToList();
         }

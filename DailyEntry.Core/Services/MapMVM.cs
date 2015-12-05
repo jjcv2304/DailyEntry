@@ -61,8 +61,23 @@ namespace DailyEntry.Core.Services
                                       Sleep = df.Sleep,
                                       Soreness = df.Soreness,
                                       Stress = df.Stress,
-                                      Weight = df.Weight
-                                  };
+                                      Weight = df.Weight,
+                Workouts = df.WorkoutsVM==null ? null: (from w in df.WorkoutsVM
+                              select new Workout()
+                              {
+                                  WorkoutId = w.WorkoutId,
+                                  Distance = w.Distance,
+                                  Notes = w.Notes,
+                                  TotalTime = w.TotalTime,
+                                  WorkoutTypeId = w.WorkoutTypeId,
+                                  WorkoutType = new WorkoutType()
+                                  {
+                                      WorkoutTypeId = w.WorkoutTypeId,
+                                      Name = w.WorkoutTypeName
+                                  }
+                                  
+                              }).ToList()
+            };
             return diaryFeeling;
         }
         
@@ -100,7 +115,7 @@ namespace DailyEntry.Core.Services
 
         public static List<WorkoutVM> WorkoutToWorkoutVM(ICollection<Workout> workouts)
         {
-           var  workoutsVM = from w in workouts
+           var  workoutsVM = workouts== null ? null : (from w in workouts
                          select new WorkoutVM()
                          {
                              WorkoutId = w.WorkoutId,
@@ -110,8 +125,8 @@ namespace DailyEntry.Core.Services
                              DiaryFeelingId = w.DiaryFeelingId,
                              WorkoutTypeId = w.WorkoutTypeId,
                              WorkoutTypeName = w.WorkoutType.Name
-                         };
-            return workoutsVM.ToList();
+                         }).ToList();
+            return workoutsVM;
         }
 
         public static Workout WorkoutToWorkoutVM(WorkoutVM workoutVM)

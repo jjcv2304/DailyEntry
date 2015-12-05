@@ -31,6 +31,7 @@ namespace DailyEntry.WebAPI.Controllers
         //public IHttpActionResult Get(int pageSize, int page)
         public IHttpActionResult Get()
         {
+            //todo implement page
             int pageSize = 10;
             int page= 1;
             if (pageSize > MAX_PAGE_SIZE)
@@ -59,7 +60,7 @@ namespace DailyEntry.WebAPI.Controllers
         {
             try
             {
-                _service.AddDailyFeelingAndWorkout(dailyFeelingVM);
+                _service.AddDailyFeelingAndWorkouts(dailyFeelingVM);
                 return Request.CreateResponse(HttpStatusCode.Created, dailyFeelingVM);
             }
             catch (Exception ex)
@@ -83,12 +84,11 @@ namespace DailyEntry.WebAPI.Controllers
         }
 
         [HttpPut]
-        [HttpPatch]
-        public HttpResponseMessage Patch(DailyFeelingVM dailyFeelingVM)
+        public HttpResponseMessage Put(DailyFeelingVM dailyFeelingVM)
         {
             try
             {
-                _service.EditDiaryFeeling(dailyFeelingVM);
+                _service.EditDiaryFeelingAndWorkouts(dailyFeelingVM);
                 return Request.CreateResponse(HttpStatusCode.OK);
             }
             catch (Exception ex)

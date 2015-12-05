@@ -8,14 +8,14 @@ namespace DailyEntry.Core.Services
     {
 
         //Graph
-        void AddDailyFeelingAndWorkout(DailyFeelingVM dailyFeelingVM);
+        void AddDailyFeelingAndWorkouts(DailyFeelingVM dailyFeelingVM);
         void DeleteDailyFeelingAndWorkout(int dailyFeelingId);
 
         //DailyFeeling
         DailyFeelingVM GetDailyFeeling(int dailyFeelingId);
         DailyFeelingPageVM GetDailyFeelings(int pageSize, int page);
         void AddDailyFeeling(DailyFeelingVM diaryFeelingVM);        
-        void EditDiaryFeeling(DailyFeelingVM diaryFeelingVM);
+        void EditDiaryFeelingAndWorkouts(DailyFeelingVM dailyFeelingVM);
         
         //Workout
         void AddWorkout(WorkoutVM workoutVM);
