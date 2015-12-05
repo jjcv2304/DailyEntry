@@ -72,13 +72,13 @@ E:\WORK\VS_DailyEntries\DailyEntry\DailyEntry.WebAPI\bin\System.Web.WebPages.Dep
 E:\WORK\VS_DailyEntries\DailyEntry\DailyEntry.WebAPI\bin\System.Web.WebPages.Razor.xml
 E:\WORK\VS_DailyEntries\DailyEntry\DailyEntry.WebAPI\bin\EntityFramework.xml
 E:\WORK\VS_DailyEntries\DailyEntry\DailyEntry.WebAPI\bin\WebApiContrib.Formatting.Jsonp.pdb
-E:\WORK\VS_DailyEntries\DailyEntry\DailyEntry.WebAPI\bin\WebMatrix.Data.xml
 E:\WORK\VS_DailyEntries\DailyEntry\DailyEntry.WebAPI\bin\DotNetOpenAuth.AspNet.xml
 E:\WORK\VS_DailyEntries\DailyEntry\DailyEntry.WebAPI\bin\DotNetOpenAuth.Core.xml
 E:\WORK\VS_DailyEntries\DailyEntry\DailyEntry.WebAPI\bin\DotNetOpenAuth.OAuth.Consumer.xml
 E:\WORK\VS_DailyEntries\DailyEntry\DailyEntry.WebAPI\bin\DotNetOpenAuth.OAuth.xml
 E:\WORK\VS_DailyEntries\DailyEntry\DailyEntry.WebAPI\bin\DotNetOpenAuth.OpenId.xml
 E:\WORK\VS_DailyEntries\DailyEntry\DailyEntry.WebAPI\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+E:\WORK\VS_DailyEntries\DailyEntry\DailyEntry.WebAPI\bin\WebMatrix.Data.xml
 E:\WORK\VS_DailyEntries\DailyEntry\DailyEntry.WebAPI\bin\WebMatrix.WebData.xml
 E:\WORK\VS_DailyEntries\DailyEntry\DailyEntry.WebAPI\bin\Org.Mentalis.Security.Cryptography.xml
 E:\WORK\VS_DailyEntries\DailyEntry\DailyEntry.WebAPI\bin\Mono.Math.xml

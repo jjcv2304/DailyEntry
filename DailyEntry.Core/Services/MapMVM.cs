@@ -78,7 +78,8 @@ namespace DailyEntry.Core.Services
                 Sleep = df.Sleep,
                 Soreness = df.Soreness,
                 Stress = df.Stress,
-                Weight = df.Weight
+                Weight = df.Weight,
+                WorkoutsVM = WorkoutToWorkoutVM(df.Workouts)
             };
             return diaryFeeling;
         }
@@ -94,6 +95,23 @@ namespace DailyEntry.Core.Services
                                          WorkoutTypeId = wt.WorkoutTypeId
                                      };
             return workoutTypesvm.ToList();
+        }
+
+
+        public static List<WorkoutVM> WorkoutToWorkoutVM(ICollection<Workout> workouts)
+        {
+           var  workoutsVM = from w in workouts
+                         select new WorkoutVM()
+                         {
+                             WorkoutId = w.WorkoutId,
+                             Distance = w.Distance,
+                             TotalTime = w.TotalTime,
+                             Notes = w.Notes,
+                             DiaryFeelingId = w.DiaryFeelingId,
+                             WorkoutTypeId = w.WorkoutTypeId,
+                             WorkoutTypeName = w.WorkoutType.Name
+                         };
+            return workoutsVM.ToList();
         }
 
         public static Workout WorkoutToWorkoutVM(WorkoutVM workoutVM)

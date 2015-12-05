@@ -16,6 +16,7 @@ E:\WORK\VS_DailyEntries\DailyEntry\DailyEntry.Test\bin\Debug\WebActivator.dll
 E:\WORK\VS_DailyEntries\DailyEntry\DailyEntry.Test\bin\Debug\System.Web.Optimization.dll
 E:\WORK\VS_DailyEntries\DailyEntry\DailyEntry.Test\bin\Debug\Ninject.Web.Common.dll
 E:\WORK\VS_DailyEntries\DailyEntry\DailyEntry.Test\bin\Debug\Ninject.dll
+E:\WORK\VS_DailyEntries\DailyEntry\DailyEntry.Test\bin\Debug\System.Web.Http.Cors.dll
 E:\WORK\VS_DailyEntries\DailyEntry\DailyEntry.Test\bin\Debug\DotNetOpenAuth.AspNet.dll
 E:\WORK\VS_DailyEntries\DailyEntry\DailyEntry.Test\bin\Debug\Microsoft.Web.WebPages.OAuth.dll
 E:\WORK\VS_DailyEntries\DailyEntry\DailyEntry.Test\bin\Debug\Microsoft.Web.Infrastructure.dll
@@ -26,11 +27,13 @@ E:\WORK\VS_DailyEntries\DailyEntry\DailyEntry.Test\bin\Debug\System.Web.Razor.dl
 E:\WORK\VS_DailyEntries\DailyEntry\DailyEntry.Test\bin\Debug\System.Web.WebPages.Razor.dll
 E:\WORK\VS_DailyEntries\DailyEntry\DailyEntry.Test\bin\Debug\System.Web.WebPages.dll
 E:\WORK\VS_DailyEntries\DailyEntry\DailyEntry.Test\bin\Debug\WebGrease.dll
+E:\WORK\VS_DailyEntries\DailyEntry\DailyEntry.Test\bin\Debug\System.Web.Cors.dll
 E:\WORK\VS_DailyEntries\DailyEntry\DailyEntry.Test\bin\Debug\DotNetOpenAuth.OAuth.Consumer.dll
 E:\WORK\VS_DailyEntries\DailyEntry\DailyEntry.Test\bin\Debug\DotNetOpenAuth.OAuth.dll
 E:\WORK\VS_DailyEntries\DailyEntry\DailyEntry.Test\bin\Debug\DotNetOpenAuth.Core.dll
 E:\WORK\VS_DailyEntries\DailyEntry\DailyEntry.Test\bin\Debug\DotNetOpenAuth.OpenId.RelyingParty.dll
 E:\WORK\VS_DailyEntries\DailyEntry\DailyEntry.Test\bin\Debug\DotNetOpenAuth.OpenId.dll
+E:\WORK\VS_DailyEntries\DailyEntry\DailyEntry.Test\bin\Debug\WebMatrix.Data.dll
 E:\WORK\VS_DailyEntries\DailyEntry\DailyEntry.Test\bin\Debug\System.Web.Helpers.dll
 E:\WORK\VS_DailyEntries\DailyEntry\DailyEntry.Test\bin\Debug\System.Web.WebPages.Deployment.dll
 E:\WORK\VS_DailyEntries\DailyEntry\DailyEntry.Test\bin\Debug\Antlr3.Runtime.dll
@@ -51,6 +54,7 @@ E:\WORK\VS_DailyEntries\DailyEntry\DailyEntry.Test\bin\Debug\Ninject.Web.Common.
 E:\WORK\VS_DailyEntries\DailyEntry\DailyEntry.Test\bin\Debug\Ninject.Web.Common.xml
 E:\WORK\VS_DailyEntries\DailyEntry\DailyEntry.Test\bin\Debug\Ninject.pdb
 E:\WORK\VS_DailyEntries\DailyEntry\DailyEntry.Test\bin\Debug\Ninject.xml
+E:\WORK\VS_DailyEntries\DailyEntry\DailyEntry.Test\bin\Debug\System.Web.Http.Cors.xml
 E:\WORK\VS_DailyEntries\DailyEntry\DailyEntry.Test\bin\Debug\DotNetOpenAuth.AspNet.xml
 E:\WORK\VS_DailyEntries\DailyEntry\DailyEntry.Test\bin\Debug\Microsoft.Web.WebPages.OAuth.xml
 E:\WORK\VS_DailyEntries\DailyEntry\DailyEntry.Test\bin\Debug\System.Web.Http.WebHost.xml
@@ -63,6 +67,7 @@ E:\WORK\VS_DailyEntries\DailyEntry\DailyEntry.Test\bin\Debug\DotNetOpenAuth.OAut
 E:\WORK\VS_DailyEntries\DailyEntry\DailyEntry.Test\bin\Debug\DotNetOpenAuth.Core.xml
 E:\WORK\VS_DailyEntries\DailyEntry\DailyEntry.Test\bin\Debug\DotNetOpenAuth.OpenId.RelyingParty.xml
 E:\WORK\VS_DailyEntries\DailyEntry\DailyEntry.Test\bin\Debug\DotNetOpenAuth.OpenId.xml
+E:\WORK\VS_DailyEntries\DailyEntry\DailyEntry.Test\bin\Debug\WebMatrix.Data.xml
 E:\WORK\VS_DailyEntries\DailyEntry\DailyEntry.Test\bin\Debug\System.Web.Helpers.xml
 E:\WORK\VS_DailyEntries\DailyEntry\DailyEntry.Test\bin\Debug\System.Web.WebPages.Deployment.xml
 E:\WORK\VS_DailyEntries\DailyEntry\DailyEntry.Test\bin\Debug\Org.Mentalis.Security.Cryptography.xml
@@ -71,8 +76,3 @@ E:\WORK\VS_DailyEntries\DailyEntry\DailyEntry.Test\obj\Debug\DailyEntry.Test.csp
 E:\WORK\VS_DailyEntries\DailyEntry\DailyEntry.Test\obj\Debug\DailyEntry.Test.csprojResolveAssemblyReference.cache
 E:\WORK\VS_DailyEntries\DailyEntry\DailyEntry.Test\obj\Debug\DailyEntry.Test.dll
 E:\WORK\VS_DailyEntries\DailyEntry\DailyEntry.Test\obj\Debug\DailyEntry.Test.pdb
-E:\WORK\VS_DailyEntries\DailyEntry\DailyEntry.Test\bin\Debug\WebMatrix.Data.dll
-E:\WORK\VS_DailyEntries\DailyEntry\DailyEntry.Test\bin\Debug\WebMatrix.Data.xml
-E:\WORK\VS_DailyEntries\DailyEntry\DailyEntry.Test\bin\Debug\System.Web.Http.Cors.dll
-E:\WORK\VS_DailyEntries\DailyEntry\DailyEntry.Test\bin\Debug\System.Web.Cors.dll
-E:\WORK\VS_DailyEntries\DailyEntry\DailyEntry.Test\bin\Debug\System.Web.Http.Cors.xml
