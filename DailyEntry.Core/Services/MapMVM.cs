@@ -69,13 +69,7 @@ namespace DailyEntry.Core.Services
                                   Distance = w.Distance,
                                   Notes = w.Notes,
                                   TotalTime = w.TotalTime,
-                                  WorkoutTypeId = w.WorkoutTypeId,
-                                  WorkoutType = new WorkoutType()
-                                  {
-                                      WorkoutTypeId = w.WorkoutTypeId,
-                                      Name = w.WorkoutTypeName
-                                  }
-                                  
+                                  WorkoutTypeId = w.WorkoutTypeId
                               }).ToList()
             };
             return diaryFeeling;

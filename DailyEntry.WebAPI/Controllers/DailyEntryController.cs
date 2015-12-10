@@ -69,11 +69,11 @@ namespace DailyEntry.WebAPI.Controllers
             }
         }
 
-        public HttpResponseMessage Delete(int dailyFeelingId)
+        public HttpResponseMessage Delete([FromUri]DailyFeelingVM dailyFeelingVM)
         {
             try
             {
-                _service.DeleteDailyFeelingAndWorkout(dailyFeelingId);
+                _service.DeleteDailyFeelingAndWorkout(dailyFeelingVM.DailyFeelingId);
                 return Request.CreateResponse(HttpStatusCode.NotImplemented);
 
             }

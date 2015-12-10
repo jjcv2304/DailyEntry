@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using DailyEntry.Core.Interfaces;
 using DailyEntry.Core.Model;
 using DailyEntry.Core.ViewModel;
@@ -37,41 +38,84 @@ namespace DailyEntry.Core.Services
             var diaryEntry = MapMVM.DiaryFeelingVMToDiaryFeeling(diaryFeelingVM);
             _uow.DiaryFeelingRepository.CreateDailyFeeling(diaryEntry);
             _uow.Save();
-        }        
+        }
 
         //DailyFeelings Graph
         public void AddDailyFeelingAndWorkouts(DailyFeelingVM dailyFeelingVM)
         {
             var dailyFeeling = MapMVM.DiaryFeelingVMToDiaryFeeling(dailyFeelingVM);
             _uow.DiaryFeelingRepository.CreateDailyFeeling(dailyFeeling);
-            AddEditWorkouts(dailyFeeling);
+            AddWorkouts(dailyFeeling);
             _uow.Save();
             dailyFeelingVM = MapMVM.DiaryFeelingToDiaryFeelingVM(dailyFeeling);
-        }      
+        }
         public void EditDiaryFeelingAndWorkouts(DailyFeelingVM dailyFeelingVM)
         {
             var dailyFeeling = MapMVM.DiaryFeelingVMToDiaryFeeling(dailyFeelingVM);
             _uow.DiaryFeelingRepository.UpdateDailyFeeling(dailyFeeling);
-            AddEditWorkouts(dailyFeeling);
+            UpdateWorkouts(dailyFeeling);
             _uow.Save();
+            dailyFeelingVM = MapMVM.DiaryFeelingToDiaryFeelingVM(dailyFeeling);
         }
-        private void AddEditWorkouts(DailyFeeling dailyFeeling)
+
+        private void UpdateWorkouts(DailyFeeling dailyFeeling)
+        {
+            var dailyFeelingCurrent = _uow.DiaryFeelingRepository.GetDailyFeeling(dailyFeeling.DailyFeelingId);
+            if (dailyFeelingCurrent.Workouts == null || !dailyFeelingCurrent.Workouts.Any())
+            {
+                AddWorkouts(dailyFeeling);
+                return;
+            }
+
+            var isUpdate = false;
+            foreach (var workoutCurrent in dailyFeelingCurrent.Workouts)
+            {
+                foreach (var workout in dailyFeeling.Workouts)
+                {
+                    if (workoutCurrent.WorkoutId == workout.WorkoutId)
+                    {
+                        //UpdateWorkout(workout);
+                        isUpdate = true;
+                    }
+                }
+                if (!isUpdate)
+                {
+                    //DeleteWorkout(workoutCurrent);
+                }
+                isUpdate = false;
+            }
+            var isCreate = true;
+            foreach (var workout in dailyFeeling.Workouts)
+            {
+                foreach (var workoutCurrent in dailyFeelingCurrent.Workouts)
+                {
+                    if (workoutCurrent.WorkoutId == workout.WorkoutId)
+                    {
+                        isCreate = false;
+                    }
+                }
+                if (isCreate)
+                {
+                    //AddWorkout(workout);
+                }
+            }
+
+        }
+
+        private void AddWorkouts(DailyFeeling dailyFeeling)
         {
             if (dailyFeeling.Workouts != null && dailyFeeling.Workouts.Count > 0)
             {
                 foreach (var workout in dailyFeeling.Workouts)
                 {
                     workout.DiaryFeelingId = dailyFeeling.DailyFeelingId;
-                    if (workout.WorkoutId == 0)
-                    {
-                        _uow.WorkoutRepository.CreateWorkout(workout);
-                    }
-                    else
-                    {
-                        _uow.WorkoutRepository.UpdateWorkout(workout);
-                    }
+                    _uow.WorkoutRepository.CreateWorkout(workout);
                 }
             }
+        }
+        private void DeleteWorkoutByDailyFeelingId(int dailyFeelingId)
+        {
+            _uow.WorkoutRepository.DeleteWorkoutByDailyFeelingId(dailyFeelingId);
         }
         public void DeleteDailyFeelingAndWorkout(int dailyFeelingId)
         {

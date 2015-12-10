@@ -5,7 +5,7 @@ using DailyEntry.Core.Model;
 
 namespace DailyEntry.Infrastructure.Repositories
 {
-    public class WorkoutRepository: IWorkoutRepository
+    public class WorkoutRepository : IWorkoutRepository
     {
         private readonly TrainningDB _context;
 
@@ -32,7 +32,7 @@ namespace DailyEntry.Infrastructure.Repositories
 
         public void DeleteWorkout(Workout workout)
         {
-           DeleteWorkout(workout.WorkoutId);
+            DeleteWorkout(workout.WorkoutId);
         }
 
         public void DeleteWorkout(int workoutId)
@@ -43,6 +43,20 @@ namespace DailyEntry.Infrastructure.Repositories
             if (workoutToDelete != null)
             {
                 _context.Workouts.Remove(workoutToDelete);
+            }
+        }
+
+        public void DeleteWorkoutByDailyFeelingId(int dailyFeelingId)
+        {
+            //Todo test this well
+            var workoutsToDelete = _context.Workouts.Where(w => w.DiaryFeelingId == dailyFeelingId);
+
+            if (workoutsToDelete.Any())
+            {
+                foreach (var workoutToDelete in workoutsToDelete)
+                {
+                    _context.Workouts.Remove(workoutToDelete);
+                }
             }
         }
 
@@ -61,6 +75,6 @@ namespace DailyEntry.Infrastructure.Repositories
             return _context.WorkoutTypes.ToList();
         }
 
-    
+
     }
 }
